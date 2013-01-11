@@ -120,7 +120,7 @@
             "name": "keyword.control.catch-exception.golo"
         },
         {
-            "match": "\\b(if|then|else|while|for|foreach|do|return|when|where|break|continue)\\b", 
+            "match": "\\b(if|then|else|while|for|foreach|do|return|when|otherwise|where|break|continue)\\b", 
             "name": "keyword.control.golo"
         },
                 {

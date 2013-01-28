@@ -124,7 +124,7 @@
             "name": "keyword.control.golo"
         },
                 {
-            "match": "\\b(println|function|class|module|import)\\b", 
+            "match": "\\b(println|function|pimp|class|module|import)\\b", 
             "name": "keyword.other.golo"
         },
         {

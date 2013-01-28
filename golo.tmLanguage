@@ -192,7 +192,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|function|class|module|import)\b</string>
+			<string>\b(println|function|pimp|class|module|import)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>

@@ -110,6 +110,10 @@
             "name": "constant.other.golo"
         },
 
+        {
+            "match": "\\b(this)\\b",
+            "name": "constant.other.golo"
+        },
 
         {
             "match": "\\b(var|let|val|define|mixin|get|undefine|copy|freeze|local)\\b",
@@ -120,7 +124,7 @@
             "name": "keyword.control.catch-exception.golo"
         },
         {
-            "match": "\\b(if|then|else|while|for|foreach|do|return|when|otherwise|where|break|continue)\\b", 
+            "match": "\\b(if|then|else|match|while|for|foreach|do|return|when|otherwise|where|break|continue)\\b", 
             "name": "keyword.control.golo"
         },
                 {
@@ -166,11 +170,11 @@
 
         {
             "match": "\\b(range)\\b", 
-            "name": "storage.type.buildin.kotlin"
+            "name": "storage.type.buildin.golo"
         },
         {
             "match": "\\b(Array|alength|aget|aset)\\b", 
-            "name": "storage.type.buildin.array.kotlin"
+            "name": "storage.type.buildin.array.golo"
         }
   ],
 

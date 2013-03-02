@@ -174,7 +174,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(var|let|val|local)\b</string>
+			<string>\b(var|let|val|define|mixin|get|undefine|copy|freeze|local)\b</string>
 			<key>name</key>
 			<string>storage.modifier.golo</string>
 		</dict>
@@ -192,13 +192,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|function|pimp|class|module|import)\b</string>
+			<string>\b(println|function|pimp|class|DynamicObject|module|import)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(in|is|as|assert)\b</string>
+			<string>\b(in|is|isnt|as|assert)\b</string>
 			<key>name</key>
 			<string>keyword.operator.golo</string>
 		</dict>

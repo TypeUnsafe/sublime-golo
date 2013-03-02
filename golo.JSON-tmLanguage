@@ -112,7 +112,7 @@
 
 
         {
-            "match": "\\b(var|let|val|local)\\b",
+            "match": "\\b(var|let|val|define|mixin|get|undefine|copy|freeze|local)\\b",
             "name": "storage.modifier.golo"
         },
         {
@@ -124,11 +124,11 @@
             "name": "keyword.control.golo"
         },
                 {
-            "match": "\\b(println|function|pimp|class|module|import)\\b", 
+            "match": "\\b(println|function|pimp|class|DynamicObject|module|import)\\b", 
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|is|as|assert)\\b", 
+            "match": "\\b(in|is|isnt|as|assert)\\b", 
             "name": "keyword.operator.golo"
         },
         {

@@ -16,3 +16,8 @@ Copy `golo.tmLanguage` file to `Sublime Text 2/Packages/User`
 If you want to contribute to this project, first of all you need to download the latest version of [AAAPackageDev](https://bitbucket.org/guillermooo/aaapackagedev). 
 Then you can follow this tutorial : [Syntax Definitions](http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html) for changing the syntax definition file.
 
+##License
+
+Sublime-golo is available under the terms of the [MIT-License](http://en.wikipedia.org/wiki/MIT_License#License_terms).
+
+Copyright 2013, Philippe Charrière

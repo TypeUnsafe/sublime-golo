@@ -204,7 +204,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(in|is|isnt|as|assert)\b</string>
+			<string>\b(in|and|or|is|isnt|as|assert)\b</string>
 			<key>name</key>
 			<string>keyword.operator.golo</string>
 		</dict>

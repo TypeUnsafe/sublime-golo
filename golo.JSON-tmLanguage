@@ -132,7 +132,7 @@
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|and|or|is|isnt|as|assert)\\b", 
+            "match": "\\b(in|not|and|or|is|isnt|as|assert)\\b", 
             "name": "keyword.operator.golo"
         },
         {

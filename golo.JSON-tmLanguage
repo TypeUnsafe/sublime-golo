@@ -144,7 +144,7 @@
             "name": "keyword.operator.assignment.golo"
         },
         {
-            "match": "(:)", 
+            "match": "(:|\\||)", 
             "name": "keyword.operator.declaration.golo"
         },
         {
@@ -169,7 +169,7 @@
         },
 
         {
-            "match": "\\b(range)\\b", 
+            "match": "\\b(range)|\\(|\\)|\\b", 
             "name": "storage.type.buildin.golo"
         },
         {

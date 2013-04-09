@@ -222,7 +222,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(:)</string>
+			<string>(:|\||)</string>
 			<key>name</key>
 			<string>keyword.operator.declaration.golo</string>
 		</dict>
@@ -258,7 +258,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(range)\b</string>
+			<string>\b(range)|\(|\)|\b</string>
 			<key>name</key>
 			<string>storage.type.buildin.golo</string>
 		</dict>

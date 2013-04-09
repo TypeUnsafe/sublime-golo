@@ -198,7 +198,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|function|pimp|class|DynamicObject|module|import)\b</string>
+			<string>\b(println|function|pimp|augment|class|DynamicObject|module|import)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>

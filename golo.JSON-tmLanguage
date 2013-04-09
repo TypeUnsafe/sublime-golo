@@ -128,7 +128,7 @@
             "name": "keyword.control.golo"
         },
                 {
-            "match": "\\b(println|function|pimp|class|DynamicObject|module|import)\\b", 
+            "match": "\\b(println|function|pimp|augment|class|DynamicObject|module|import)\\b", 
             "name": "keyword.other.golo"
         },
         {

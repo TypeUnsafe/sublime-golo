@@ -116,7 +116,7 @@
         },
 
         {
-            "match": "\\b(var|let|val|define|mixin|get|undefine|copy|freeze|local)\\b",
+            "match": "\\b(var|let|val|define|mixin|get|put|undefine|copy|freeze|local)\\b",
             "name": "storage.modifier.golo"
         },
         {

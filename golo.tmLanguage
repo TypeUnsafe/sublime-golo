@@ -180,7 +180,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(var|let|val|define|mixin|get|undefine|copy|freeze|local)\b</string>
+			<string>\b(var|let|val|define|mixin|get|put|undefine|copy|freeze|local)\b</string>
 			<key>name</key>
 			<string>storage.modifier.golo</string>
 		</dict>

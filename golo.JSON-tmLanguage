@@ -132,11 +132,11 @@
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|not|and|or|is|isnt|as|assert)\\b", 
+            "match": "\\b(in|not|and|or|is|isnt|as|assert|\\?:|orIfNull)\\b", 
             "name": "keyword.operator.golo"
         },
         {
-            "match": "(==|!=|<=|>=|<>|<|>)", 
+            "match": "(==|!=|<=|>=|<>|<|>|\\?:)", 
             "name": "keyword.operator.comparison.golo"
         }, 
         {

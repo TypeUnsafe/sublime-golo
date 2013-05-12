@@ -198,13 +198,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|function|pimp|augment|class|DynamicObject|module|import)\b</string>
+			<string>\b(println|print|readln|readpwd|function|pimp|spawn|shutdown|augment|class|DynamicObject|module|import)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(in|not|and|or|is|isnt|as|assert|\?:|orIfNull)\b</string>
+			<string>\b(in|not|and|or|is|isnt|as|assert|andThen|\?:|orIfNull)\b</string>
 			<key>name</key>
 			<string>keyword.operator.golo</string>
 		</dict>

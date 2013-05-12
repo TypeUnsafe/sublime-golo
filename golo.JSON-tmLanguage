@@ -128,11 +128,11 @@
             "name": "keyword.control.golo"
         },
                 {
-            "match": "\\b(println|function|pimp|augment|class|DynamicObject|module|import)\\b", 
+            "match": "\\b(println|print|readln|readpwd|function|pimp|spawn|shutdown|augment|class|DynamicObject|module|import)\\b", 
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|not|and|or|is|isnt|as|assert|\\?:|orIfNull)\\b", 
+            "match": "\\b(in|not|and|or|is|isnt|as|assert|andThen|\\?:|orIfNull)\\b", 
             "name": "keyword.operator.golo"
         },
         {

@@ -260,13 +260,13 @@
 			<key>match</key>
 			<string>\b(range)|\(|\)|\b</string>
 			<key>name</key>
-			<string>storage.type.buildin.golo</string>
+			<string>storage.type.buildin.range.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(struct)|\{|\}|\b</string>
 			<key>name</key>
-			<string>storage.type.buildin.struct.golo</string>
+			<string>keyword.operator.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>

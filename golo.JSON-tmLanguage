@@ -170,11 +170,11 @@
 
         {
             "match": "\\b(range)|\\(|\\)|\\b", 
-            "name": "storage.type.buildin.golo"
+            "name": "storage.type.buildin.range.golo"
         },
         {
             "match": "\\b(struct)|\\{|\\}|\\b", 
-            "name": "storage.type.buildin.struct.golo"
+            "name": "keyword.operator.golo"
         },        
         {
             "match": "\\b(Array|alength|aget|aset)\\b", 

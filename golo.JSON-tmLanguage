@@ -116,23 +116,23 @@
         },
 
         {
-            "match": "\\b(var|let|val|define|mixin|get|put|undefine|copy|freeze|local)\\b",
+            "match": "\\b(var|let|val|define|mixin|get|set|getKey|getValue|put|undefine|copy|freeze|local|members|values|isFrozen|iterator|asModule|anonymousModule|asFunction|to|times|upTo|downTo|bindAt|format|reduce|prepend|insert|head|tail|filter|map|join|reverse|reversed|order|ordered|include|exclude|has|add|append|delete|addIfAbsent|getOrElse|)\\b",
             "name": "storage.modifier.golo"
         },
         {
-            "match": "\\b(try|catch|finally|throw)\\b", 
+            "match": "\\b(try|catch|finally|throw|raise)\\b", 
             "name": "keyword.control.catch-exception.golo"
         },
         {
-            "match": "\\b(if|then|else|match|while|for|foreach|do|return|when|otherwise|where|break|continue)\\b", 
+            "match": "\\b(if|then|else|match|while|for|each|foreach|do|return|when|otherwise|where|break|continue)\\b", 
             "name": "keyword.control.golo"
         },
                 {
-            "match": "\\b(println|print|readln|readpwd|function|pimp|spawn|shutdown|augment|class|DynamicObject|module|import)\\b", 
+            "match": "\\b(println|print|readln|readpwd|function|fun|pimp|spawn|shutdown|augment|class|DynamicObject|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\\b", 
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|not|and|or|is|isnt|as|assert|andThen|\\?:|orIfNull)\\b", 
+            "match": "\\b(in|not|and|or|is|isnt|as|assert|andThen|\\?:|orIfNull|oftype)\\b", 
             "name": "keyword.operator.golo"
         },
         {
@@ -173,9 +173,38 @@
             "name": "storage.type.buildin.golo"
         },
         {
+            "match": "\\b(struct)|\\{|\\}|\\b", 
+            "name": "storage.type.buildin.struct.golo"
+        },        
+        {
             "match": "\\b(Array|alength|aget|aset)\\b", 
             "name": "storage.type.buildin.array.golo"
-        }
+        },
+        {
+            "match": "\\b(tuple)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.tuple.golo"
+        },
+        {
+            "match": "\\b(array)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.array.golo"
+        },
+        {
+            "match": "\\b(set)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.set.golo"
+        }, 
+        {
+            "match": "\\b(map)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.map.golo"
+        }, 
+        {
+            "match": "\\b(vector)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.vector.golo"
+        },    
+        {
+            "match": "\\b(list)|\\[|\\]|\\b", 
+            "name": "storage.type.buildin.list.golo"
+        }                                       
+
   ],
 
   "uuid": "1cc2b523-9678-42fe-80ae-2604ff57e138"

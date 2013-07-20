@@ -180,31 +180,31 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(var|let|val|define|mixin|get|put|undefine|copy|freeze|local)\b</string>
+			<string>\b(var|let|val|define|mixin|get|set|getKey|getValue|put|undefine|copy|freeze|local|members|values|isFrozen|iterator|asModule|anonymousModule|asFunction|to|times|upTo|downTo|bindAt|format|reduce|prepend|insert|head|tail|filter|map|join|reverse|reversed|order|ordered|include|exclude|has|add|append|delete|addIfAbsent|getOrElse|)\b</string>
 			<key>name</key>
 			<string>storage.modifier.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(try|catch|finally|throw)\b</string>
+			<string>\b(try|catch|finally|throw|raise)\b</string>
 			<key>name</key>
 			<string>keyword.control.catch-exception.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|then|else|match|while|for|foreach|do|return|when|otherwise|where|break|continue)\b</string>
+			<string>\b(if|then|else|match|while|for|each|foreach|do|return|when|otherwise|where|break|continue)\b</string>
 			<key>name</key>
 			<string>keyword.control.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|print|readln|readpwd|function|pimp|spawn|shutdown|augment|class|DynamicObject|module|import)\b</string>
+			<string>\b(println|print|readln|readpwd|function|fun|pimp|spawn|shutdown|augment|class|DynamicObject|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(in|not|and|or|is|isnt|as|assert|andThen|\?:|orIfNull)\b</string>
+			<string>\b(in|not|and|or|is|isnt|as|assert|andThen|\?:|orIfNull|oftype)\b</string>
 			<key>name</key>
 			<string>keyword.operator.golo</string>
 		</dict>
@@ -264,9 +264,51 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(struct)|\{|\}|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.struct.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(Array|alength|aget|aset)\b</string>
 			<key>name</key>
 			<string>storage.type.buildin.array.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(tuple)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.tuple.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(array)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.array.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(set)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.set.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(map)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.map.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(vector)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.vector.golo</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(list)|\[|\]|\b</string>
+			<key>name</key>
+			<string>storage.type.buildin.list.golo</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

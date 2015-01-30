@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -18,6 +18,38 @@
 ?</string>
 			<key>name</key>
 			<string>comment.line.number-sign.golo</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>----</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.golo</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>----</string>
+			<key>name</key>
+			<string>comment.block.golo</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.golo</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.golo</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -131,32 +163,8 @@
 			</array>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>`</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.golo</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>`</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.golo</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.single.golo</string>
-		</dict>
-		<dict>
 			<key>match</key>
-			<string>\b(true|false|null|super)\b</string>
+			<string>\b(true|false|null|super|)\b</string>
 			<key>name</key>
 			<string>constant.language.golo</string>
 		</dict>
@@ -174,13 +182,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(this)\b</string>
+			<string>\b(this|checkResult|checkArguments|withContext)\b</string>
 			<key>name</key>
 			<string>constant.other.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(var|let|val|define|mixin|get|set|getKey|getValue|put|undefine|copy|freeze|local|members|values|isFrozen|iterator|asModule|anonymousModule|asFunction|to|times|upTo|downTo|bindAt|format|reduce|prepend|insert|head|tail|filter|map|join|reverse|reversed|order|ordered|include|exclude|has|add|append|delete|addIfAbsent|getOrElse|)\b</string>
+			<string>\b(var|let|val|local|extends|implements|overrides|interfaces)\b</string>
 			<key>name</key>
 			<string>storage.modifier.golo</string>
 		</dict>
@@ -192,19 +200,25 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|then|else|match|while|for|each|foreach|do|return|when|otherwise|where|break|continue)\b</string>
+			<string>\b(if|then|else|match|while|for|foreach|do|return|when|otherwise|where|break|continue)\b</string>
 			<key>name</key>
 			<string>keyword.control.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(println|print|readln|readpwd|function|fun|pimp|spawn|shutdown|augment|class|DynamicObject|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\b</string>
+			<string>\b(println|print|readln|readpwd|function|fun|pimp|spawn|send|shutdown|augment|AdapterFabric|DynamicObject|Thread|Promise|promise|Observable|DynamicVariable|defaultContext|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\b</string>
 			<key>name</key>
 			<string>keyword.other.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(in|not|and|or|is|isnt|as|assert|andThen|\?:|orIfNull|oftype)\b</string>
+			<string>\b(define|fail|onSet|onFail|onChange|invokeWithArguments|stringify|value|get|set|future|times|each|filter|map)\b</string>
+			<key>name</key>
+			<string>support.function.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(in|not|and|or|is|isnt|as|andThen|bindTo|bindAt|\?:|orIfNull|oftype)\b</string>
 			<key>name</key>
 			<string>keyword.operator.golo</string>
 		</dict>
@@ -252,63 +266,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(;)</string>
+			<string>\b(struct|range\[|tuple\[|array\[|map\[|set\[|vector\[|list\[)|\[|\]|\b</string>
 			<key>name</key>
-			<string>punctuation.terminator.golo</string>
+			<string>support.class.golo</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(range)|\(|\)|\b</string>
+			<string>(\{|\}|@|\(|\))</string>
 			<key>name</key>
-			<string>storage.type.buildin.range.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(struct)|\{|\}|\b</string>
-			<key>name</key>
-			<string>keyword.operator.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(Array|alength|aget|aset)\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.array.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(tuple)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.tuple.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(array)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.array.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(set)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.set.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(map)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.map.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(vector)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.vector.golo</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(list)|\[|\]|\b</string>
-			<key>name</key>
-			<string>storage.type.buildin.list.golo</string>
+			<string>support.class.golo</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

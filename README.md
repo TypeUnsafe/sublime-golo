@@ -1,10 +1,10 @@
-#Golo Syntax Definition for Sublime Text 2
+#Golo Syntax Definition for Sublime Text 2 & 3
 
-This is [Sumblime Text 2](http://www.sublimetext.com/) syntax definition for [Golo](http://golo-lang.org/) programming language.
+This is [Sumblime Text 2 & 3](http://www.sublimetext.com/) syntax definition for [Golo](http://golo-lang.org/) programming language.
 
 ##Installation
 
-Copy `golo.tmLanguage` file to `Sublime Text 2/Packages/User`
+Copy `golo.tmLanguage` file to `Sublime Text 2/Packages/User` or `Sublime Text 3/Packages/User`
 
 ##Have fun
 
@@ -20,4 +20,4 @@ Then you can follow this tutorial : [Syntax Definitions](http://docs.sublimetext
 
 Sublime-golo is available under the terms of the [MIT-License](http://en.wikipedia.org/wiki/MIT_License#License_terms).
 
-Copyright 2013, Philippe Charrière
+Copyright 2014-2015, Philippe Charrière

@@ -8,7 +8,26 @@
             "name": "comment.line.number-sign.golo",
             "comment": "comment with #"
         },
-
+        {
+            "begin": "----", 
+            "captures": {
+                "0": {
+                    "name": "punctuation.definition.comment.golo"
+                }
+            }, 
+            "end": "----", 
+            "name": "comment.block.golo"
+        },         
+        {
+            "begin": "/\\*", 
+            "captures": {
+                "0": {
+                    "name": "punctuation.definition.comment.golo"
+                }
+            }, 
+            "end": "\\*/", 
+            "name": "comment.block.golo"
+        }, 
         { 
             "begin": "\"\"\"", 
             "beginCaptures": {
@@ -81,24 +100,9 @@
                 }
             ]
         },
-        {
-            "begin": "`", 
-            "beginCaptures": {
-                "0": {
-                    "name": "punctuation.definition.string.begin.golo"
-                }
-            }, 
-            "end": "`", 
-            "endCaptures": {
-                "0": {
-                    "name": "punctuation.definition.string.end.golo"
-                }
-            }, 
-            "name": "string.quoted.single.golo"
-        },
 
         {
-            "match": "\\b(true|false|null|super)\\b", 
+            "match": "\\b(true|false|null|super|)\\b", 
             "name": "constant.language.golo"
         }, 
         {
@@ -111,28 +115,33 @@
         },
 
         {
-            "match": "\\b(this)\\b",
+            "match": "\\b(this|checkResult|checkArguments|withContext)\\b",
             "name": "constant.other.golo"
         },
 
         {
-            "match": "\\b(var|let|val|define|mixin|get|set|getKey|getValue|put|undefine|copy|freeze|local|members|values|isFrozen|iterator|asModule|anonymousModule|asFunction|to|times|upTo|downTo|bindAt|format|reduce|prepend|insert|head|tail|filter|map|join|reverse|reversed|order|ordered|include|exclude|has|add|append|delete|addIfAbsent|getOrElse|)\\b",
+            "match": "\\b(var|let|val|local|extends|implements|overrides|interfaces)\\b",
             "name": "storage.modifier.golo"
         },
         {
             "match": "\\b(try|catch|finally|throw|raise)\\b", 
             "name": "keyword.control.catch-exception.golo"
         },
+        
         {
-            "match": "\\b(if|then|else|match|while|for|each|foreach|do|return|when|otherwise|where|break|continue)\\b", 
+            "match": "\\b(if|then|else|match|while|for|foreach|do|return|when|otherwise|where|break|continue)\\b", 
             "name": "keyword.control.golo"
         },
-                {
-            "match": "\\b(println|print|readln|readpwd|function|fun|pimp|spawn|shutdown|augment|class|DynamicObject|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\\b", 
+        {
+            "match": "\\b(println|print|readln|readpwd|function|fun|pimp|spawn|send|shutdown|augment|AdapterFabric|DynamicObject|Thread|Promise|promise|Observable|DynamicVariable|defaultContext|module|import|fileToText|textToFile|mapEntry|compile|TemplateEngine|EvaluationEnvironment|asInterfaceInstance|)\\b", 
             "name": "keyword.other.golo"
         },
         {
-            "match": "\\b(in|not|and|or|is|isnt|as|assert|andThen|\\?:|orIfNull|oftype)\\b", 
+            "match": "\\b(define|fail|onSet|onFail|onChange|invokeWithArguments|stringify|value|get|set|future|times|each|filter|map)\\b", 
+            "name": "support.function.js"
+        }, 
+        {
+            "match": "\\b(in|not|and|or|is|isnt|as|andThen|bindTo|bindAt|\\?:|orIfNull|oftype)\\b", 
             "name": "keyword.operator.golo"
         },
         {
@@ -164,47 +173,14 @@
             "name": "keyword.operator.logical.golo"
         },
         {
-            "match": "(;)", 
-            "name": "punctuation.terminator.golo"
-        },
-
-        {
-            "match": "\\b(range)|\\(|\\)|\\b", 
-            "name": "storage.type.buildin.range.golo"
+            "match": "\\b(struct|range\\[|tuple\\[|array\\[|map\\[|set\\[|vector\\[|list\\[)|\\[|\\]|\\b", 
+            "name": "support.class.golo"
         },
         {
-            "match": "\\b(struct)|\\{|\\}|\\b", 
-            "name": "keyword.operator.golo"
-        },        
-        {
-            "match": "\\b(Array|alength|aget|aset)\\b", 
-            "name": "storage.type.buildin.array.golo"
-        },
-        {
-            "match": "\\b(tuple)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.tuple.golo"
-        },
-        {
-            "match": "\\b(array)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.array.golo"
-        },
-        {
-            "match": "\\b(set)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.set.golo"
-        }, 
-        {
-            "match": "\\b(map)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.map.golo"
-        }, 
-        {
-            "match": "\\b(vector)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.vector.golo"
-        },    
-        {
-            "match": "\\b(list)|\\[|\\]|\\b", 
-            "name": "storage.type.buildin.list.golo"
-        }                                       
-
+            "match": "(\\{|\\}|@|\\(|\\))", 
+            "name": "support.class.golo"
+        }
+                                
   ],
 
   "uuid": "1cc2b523-9678-42fe-80ae-2604ff57e138"
